@@ -1,0 +1,21 @@
+class Solution {
+    public static ArrayList<Integer> duplicates(int arr[], int n) {
+        // code here
+        ArrayList<Integer> a=new ArrayList<>();
+        HashSet<Integer> duplicates=new  HashSet<>();
+        HashSet<Integer> seen=new  HashSet<>();
+        for(int i=0;i<n;i++){
+            if(seen.contains(arr[i])){
+                duplicates.add(arr[i]);
+            }
+           else{
+               seen.add(arr[i]);
+           }
+        }
+         a.addAll(duplicates);
+         if(a.isEmpty()){
+             a.add(-1);
+         }
+         return a;
+    }
+}
