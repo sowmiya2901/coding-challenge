@@ -1,0 +1,17 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		int amount=(x*6)+y;  //totally 7 days in a week ,6 days mess food (6*x) and 1 day food in restaurant.So the total amount for 1 week food
+		System.out.println(amount);
+
+	}
+}
